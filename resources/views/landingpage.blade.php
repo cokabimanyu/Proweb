@@ -20,34 +20,8 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <!-- Awal Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link active warna" href="#">Home <span class="sr-only">(current)</span></a>
-                <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Article
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="artikel.php">Culture</a>
-                        <a class="dropdown-item" href="artikel.php">Law</a>
-                      </div>
-                </li>
-                <a class="nav-item nav-link" href="author.html">Author</a>
-              </div>
-            </div>
-        </div>
-          </nav>
-    <!-- Akhir Navbar -->
-
-
-
+    <!-- Navbar -->
+    @include('include.navigation')
     <!-- Jumbotron -->
         <div class="jumbotron jumbotron-fluid">
             
@@ -78,7 +52,6 @@
                 <hr>
               </div>
             </div>
-          
 
             <div class="row">
               <div class="col-sm-4 text-center">
@@ -110,20 +83,8 @@
           <a href="culture.html" class="btn btn-outline-dark tombol">Culture Article</a>
         </div>
     <!-- Akhir Artikel -->
-
     <!-- Footer -->
-    <div class="card-footer text-muted foter">
-      <div class="container">
-        <p>Be clear and content. Be moderate and wise. Be vigilant and steady. Be earnest and sweet.</p>
-        <p>Copyright ByasaWritten2019</p>
-      </div>
-    </div>
-    <!-- Footer -->
-
-
-
-
-
+    @include('include.footer')
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
