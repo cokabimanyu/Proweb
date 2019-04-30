@@ -1,0 +1,121 @@
+/* NAVBAR */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand{
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* jumbotron */
+.jumbotron{
+    background-image: url(img/office-1571931_960_720.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.jumbotron img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.jumbotron .container{
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron .display-4{
+    color: black;
+    margin-top: 30px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+}
+
+.nav-link{
+    font-family: viga;
+    color: white;
+}
+
+.profil img{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.profil h1{
+    margin-top: 100px;
+    font-family: Questrial;
+}
+
+.profil p{
+    font-family: Sintony;
+}
+
+.portofolio h2{
+    margin-top: 70px;
+    font-family: Questrial;
+}
+
+.tombol{
+    margin-top: 20px;
+    margin-bottom: 70px;
+    border-radius: 0;
+    text-align: center;
+}
+
+.foter{
+    text-align: center;
+    font-size: 10px;
+    background-color: rgb(185, 185, 185);
+}
+
+.foter p{
+    color: black;
+    font-family: Sintony;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px){
+    .navbar-brand, .nav-link{
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-link{
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid white;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron{
+        margin-top: -75px;
+        height: 640;
+    }
+
+    .jumbotron .display-4{
+        font-size: 62px;
+    }
+}
